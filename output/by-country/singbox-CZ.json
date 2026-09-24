@@ -6,31 +6,20 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "104.21.96.1",
-      "server_port": 443,
-      "uuid": "0836463b-214f-4af6-aa85-85a56a62388e",
-      "tls": {
-        "enabled": true,
-        "server_name": "d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "153.76.185.100",
+      "server_port": 3090,
+      "uuid": "0ea51e02-ed67-439b-a562-7e3d7b4430c3",
       "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "153.76.185.148",
+      "server": "153.76.185.93",
       "server_port": 3090,
-      "uuid": "1552d599-a036-4389-a5c0-bf14dfaddc1a",
+      "uuid": "52504f52-ddd4-43fe-9fc6-8fb354ca2a2f",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
