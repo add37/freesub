@@ -4,38 +4,39 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "172.66.47.45",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "server": "24864168545164.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "wk1.f1w.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "24864168545164.d6f54hd1j.cc",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "wk1.f1w.de5.net"
+          "Host": "24864168545164.d6f54hd1j.cc"
         }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-      "server": "sg.australiacaregroup.site",
-      "server_port": 20004,
-      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "server": "654168416355441.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "tw.australiacaregroup.site",
-        "insecure": true
+        "server_name": "654168416355441.d6f54hd1j.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -43,7 +44,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
       ]
     },
@@ -51,7 +52,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
