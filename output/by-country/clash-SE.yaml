@@ -16,17 +16,7 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: mein-1.octavia.dpdns.org
-  port: 50000
-  udp: true
-  type: hysteria2
-  password: xo43w4tc13ou2h3x
-  sni: main-1.octavia.dpdns.org
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: a99lje1n7ystml9q
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 194.104.94.141
+  server: se3.shtil.io
   port: 443
   udp: true
   type: vless
@@ -34,7 +24,6 @@ proxies:
   tls: true
   servername: se3.shtil.io
   skip-cert-verify: false
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 rules:
 - MATCH,PROXIES
