@@ -24,20 +24,18 @@ proxies:
   sni: fi1.obxodvpn.us
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 146.103.118.189
-  port: 443
+  server: 72.35.246.39
+  port: 2053
   udp: true
   type: vless
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+  flow: xtls-rprx-vision
   tls: true
-  servername: nl2.574ck.xyz
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /574ck-finland
-    headers:
-      Host: nl2.574ck.xyz
+  reality-opts:
+    public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
+    short-id: 5e39e518bfac6392
+  servername: vk.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
