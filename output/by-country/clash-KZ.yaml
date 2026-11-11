@@ -4,32 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇸 冰岛 (Iceland) 01 - xiaohe
-  server: 191.44.112.170
-  port: 443
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
   udp: true
   type: vless
-  uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   tls: true
-  servername: orbylume.my.to
+  servername: 3h-kazakhstan1.09vpn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tvpn-tor/is
-    headers:
-      Host: orbylume.my.to
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇸 冰岛 (Iceland) 01 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇸 冰岛 (Iceland) 01 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
 rules:
 - MATCH,PROXIES
