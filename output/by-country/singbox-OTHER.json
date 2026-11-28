@@ -4,22 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.64.80.1",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-      "security": "auto",
+      "server": "cf.877774.xyz",
+      "server_port": 443,
+      "uuid": "53580685-9d8b-42ca-9b84-c93765d9b952",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
+        "server_name": "institutes-creativity-cards-affairs.trycloudflare.com",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/lMnsZUN4/",
+        "path": "/vl-53580685",
         "headers": {
-          "Host": "v2ray1.dozapp.xyz"
+          "Host": "institutes-creativity-cards-affairs.trycloudflare.com"
         }
       }
     },

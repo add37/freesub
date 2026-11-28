@@ -5,21 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.64.80.1
-  port: 8443
+  server: cf.877774.xyz
+  port: 443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 53580685-9d8b-42ca-9b84-c93765d9b952
   tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
+  servername: institutes-creativity-cards-affairs.trycloudflare.com
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /vl-53580685
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: institutes-creativity-cards-affairs.trycloudflare.com
 proxy-groups:
 - name: PROXIES
   type: select
